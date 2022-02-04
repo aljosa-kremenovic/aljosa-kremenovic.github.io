@@ -837,7 +837,7 @@ header:hover ~ .cursor2{
     flex-wrap:wrap;
     justify-content: space-around;
     text-align: center;
-    width: 800px;
+    width: 450px;
     padding: 100px 0;
     margin: 50px auto;
 }
@@ -857,9 +857,10 @@ header:hover ~ .cursor2{
 }
 
 .icon{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: flex;
+    margin: 70px;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
@@ -944,6 +945,20 @@ span {
     color: #F7E018;
 }
 
+.skills .devicon-tailwindcss-plain:hover{
+    color: #38BDF8;
+}
+
+.skills .devicon-react-original:hover{
+    color: #61DAFB;
+}
+
+.skills .devicon-materialui-plain:hover{
+    color: #0074E8;
+}
+
+
+
 @media screen and (max-width: 720px) {
     .skills {
         display: flex;
@@ -989,7 +1004,7 @@ span {
 .projects .probox{
     position: relative;
     width: 330px;
-    height: 220px;
+    height: 247px;
     transform-style: preserve-3d;
     margin: 0 8px;
 
@@ -1008,7 +1023,7 @@ span {
 
 .projects .probox .contentBx {
     position:absolute;
-    top: 50%;
+    top: 40%;
     left: 50px;
     right: 50px;
     background: #48C5B5;
@@ -1026,15 +1041,25 @@ span {
     font-size: 13px;
 }
 
-.projects .probox .contentBx span{
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
+.projects .probox .contentBx .web{
+    margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.projects .probox .contentBx span p{
-    left: 0;
-}
+.projects .probox .contentBx a{
+   text-decoration: none;
+   color: #000;
+  }
+
+.projects .probox .contentBx .web p{
+    border: 1px solid black;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 5%;
+    color: #000;
+  }
+
 
 .projects .probox:hover .contentBx{
     transform: translateZ(50px) scaleY(1);
@@ -1042,7 +1067,6 @@ span {
 
 .projects .contentBx i{
     border-radius: 20%;
-    border: 1px solid #000;
     padding: 3px;
     margin: 0 3px;
     
@@ -1199,16 +1223,57 @@ span {
 }
 
 .apps .apbox .content i{
-    border-radius: 20%;
-    border: 1px solid #000;
     padding: 3px;
     margin: 0 3px;
     
 }
 
-.apps .apbox:hover .content p{
+.apps .apbox .content .web{
+    margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.apps .apbox .content a{
+   text-decoration: none;
+   color: #000;
+   transition: 0.5s;
+  }
+
+  .apps .apbox .content .web p{
+    border: 1px solid black;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 5%;
+    color: #000;
+    transition: 0.5s;
+  }
+
+  .apps .apbox:hover .content .web a{
     transform: translateY(0px);
     transition-delay: 0.7s;
+  }
+
+  .apps .apbox:hover .content .web p{
+    transform: translateY(0px);
+    transition-delay: 0.7s;
+  }
+
+
+
+  .apps .apbox:hover .content  p{
+    transform: translateY(0px);
+    transition-delay: 0.7s;
+  }
+
+
+  .apps .apbox .content .web a{
+    color: #000;
+    transition: 0.5s;
+    font-size: 12px;
+    transform: translateY(200px);
+    text-align: left;
+    letter-spacing: 2px
 }
 
 body.active .apps .apbox .content p{
