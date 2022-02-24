@@ -485,12 +485,12 @@
         
         
         
-        <form class="container" action="https://formsubmit.co/aljosa.kremenovic@gmail.com" method="POST" enctype="text/plain">
+        <form class="container">
             <h3>Send a Message</h3>
             <div class="row100">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="text" name="name" required="required" class="input" >
+                        <input type="text"  id="name" name="name" required="required" class="input" >
                         <span class="text">First Name</span>
                         <span class="line"></span>
                     </div>
@@ -506,7 +506,7 @@
             <div class="row100">
                 <div class="col">
                     <div class="inputBox">
-                        <input type="email" name="email" required="required" class="input" >
+                        <input type="email" id="email" name="email" required="required" class="input" >
                         <span class="text">Email</span>
                         <span class="line"></span>
                     </div>
@@ -522,7 +522,7 @@
             <div class="row100">
                 <div class="col">
                     <div class="inputBox textarea">
-                        <textarea class="input" name="message" required="required"></textarea>
+                        <textarea class="input" id="msg" name="message" required="required"></textarea>
                         <span class="text">Type your message here...</span>
                         <span class="line"></span>
                     </div>
@@ -530,7 +530,7 @@
             </div>
             <div class="row100">
                 <div class="col">
-                    <input type="submit" value="Send">
+                    <input type="submit" onclick="sendMail()" value="Send">
                 </div>
             </div>
         </form>
@@ -562,6 +562,8 @@
 <div class="cursor2"></div>
 
 <script src="vanilla-tilt.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript"> (function() {emailjs.init("user_wpna7vUurYEBZ6OJmXuDI");})();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="hover.js"></script>
