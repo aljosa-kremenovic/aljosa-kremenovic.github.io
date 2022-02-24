@@ -89,4 +89,19 @@ window.addEventListener('scroll', reveal);
         }
     }
 
+// Contact Form
+function sendMail(params) {
+    var tempParams = {
+        message:document.getElementById("msg").value,
+        name:document.getElementById("name").value,
+        email:document.getElementById("email").value,
+        subject:document.getElementById("subject").value,
 
+
+    };
+
+    emailjs.send("gmail", "template_joct4xv",tempParams)
+    .then(function(res){
+        console.log("success", res.status);
+    })
+}
