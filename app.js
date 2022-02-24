@@ -89,7 +89,7 @@ window.addEventListener('scroll', reveal);
         }
     }
 
-// Contact Form
+// Contact form
 function sendMail(params) {
     var tempParams = {
         message:document.getElementById("msg").value,
