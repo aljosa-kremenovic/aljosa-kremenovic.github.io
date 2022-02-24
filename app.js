@@ -91,7 +91,7 @@ window.addEventListener('scroll', reveal);
 
 // Contact form
 function sendMail(params) {
-    var tempParams = {
+    const tempParams = {
         message:document.getElementById("msg").value,
         name:document.getElementById("name").value,
         email:document.getElementById("email").value,
