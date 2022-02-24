@@ -106,4 +106,3 @@ function sendMail(params) {
     })
 }
 
- function() {emailjs.init("user_wpna7vUurYEBZ6OJmXuDI");}
