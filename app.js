@@ -105,3 +105,5 @@ function sendMail(params) {
         console.log("success", res.status);
     })
 }
+
+ function() {emailjs.init("user_wpna7vUurYEBZ6OJmXuDI");
